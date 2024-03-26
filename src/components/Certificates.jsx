@@ -3,7 +3,7 @@ import { certifications } from "../constants";
 
 function Certificates() {
   return (
-    <div id = 'certifications' className="mt-20">
+    <section id = 'certifications' className="mt-20">
       <h2 className={`${styles.heading2} text-center`}>Certificates</h2>
       <div className="flex gap-3 flex-col sm:flex-row items-center">
         {certifications.map((certification) => (
@@ -23,7 +23,7 @@ function Certificates() {
         ))}
         <div className="absolute z-[0] w-[50%] h-[50%] blue__gradient left-[-655px]"/>
       </div>
-    </div>
+    </section>
   );
 }
 

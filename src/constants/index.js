@@ -5,9 +5,9 @@ import certReact from "../assets/diploma-react.jpg";
 import diplo from "../assets/diplomado_en_desarrollo_web_full_stackfront_end_back_end (1).jpg";
 import webFunda from "../assets/diploma-web-fundamentos.jpg";
 import wikitest1 from "../assets/wikitest1.mp4";
-import photolabsVideo from '../assets/Photolabs.mp4'
-import photolabs from '../assets/photolabs.png'
-import soon from '../assets/soon.jpg'
+import photolabsVideo from "../assets/Photolabs.mp4";
+import photolabs from "../assets/photolabs.png";
+import soon from "../assets/soon.jpg";
 
 export const navLinks = [
   {
@@ -28,37 +28,39 @@ export const navLinks = [
   },
 ];
 
-export const cardInfo = [ 
+export const cardInfo = [
   {
     id: 1,
     title: "WikiMaps",
-    description: "WikiMaps - A collaborative mapping web app that allow users to create maps with various points of interest, keep a list of favorites and contribute to maps on the Discover page.",
+    description:
+      "WikiMaps - A collaborative mapping web app that allow users to create maps with various points of interest, keep a list of favorites and contribute to maps on the Discover page.",
     stack: ["jquery", "postgresql", "js", "css3", "nodejs", "html5"],
     image: wiki,
-    repo: 'https://github.com/glowiep/WikiMaps',
+    repo: "https://github.com/glowiep/WikiMaps",
     video: wikitest1,
-    deployed: 'https://wikimaps.up.railway.app/'
+    deployed: "https://wikimaps.up.railway.app/",
   },
   {
     id: 2,
     title: "Photolabs",
-    description: "PhotoLabs is an engaging photo browsing application that allows users to explore a diverse collection of images across various categories. With its user-friendly interface, PhotoLabs offers the following key features: Browse by Topic, Like Photos and preview them in full screen.",
+    description:
+      "PhotoLabs is an engaging photo browsing application that allows users to explore a diverse collection of images across various categories. With its user-friendly interface, PhotoLabs offers the following key features: Browse by Topic, Like Photos and preview them in full screen.",
     stack: ["reactjs", "postgresql", "js", "css3", "nodejs", "html5"],
     image: photolabs,
-    repo: 'https://github.com/svaronc/photolabs-starter',
-    video: photolabsVideo
-    
+    repo: "https://github.com/svaronc/photolabs-starter",
+    video: photolabsVideo,
   },
   {
     id: 3,
     title: "Smart Agent",
-    description: "This is an ongoing project that aims to provide a platfomr for cusstomer support agents to manage their tickets and provide a better service to their customers.",
-    stack: ["ruby", "rails","postgresql", "js", "tailwindcss", "reactjs"],
+    description:
+      "This is an ongoing project that aims to provide a platfomr for cusstomer support agents to manage their tickets and provide a better service to their customers.",
+    stack: ["ruby", "rails", "postgresql", "js", "tailwindcss", "reactjs"],
     image: soon,
-    repo: 'https://github.com/glowiep/SmartAgent',
-    video: null
+    repo: "https://github.com/glowiep/SmartAgent",
+    video: null,
   },
-]
+];
 
 export const certifications = [
   {
@@ -85,5 +87,35 @@ export const certifications = [
     id: 5,
     url: "https://platzi.com/p/sebastianvaron96/ruta/7039-web-fundamentos/diploma/detalle/",
     image: webFunda,
-  }
-]
+  },
+];
+export const stack = [
+  'reactjs',
+  'git',
+  'github',
+  'js',
+  'jquery',
+  'nodejs',
+  'postgresql',
+  'rails',
+  'ruby',
+  'tailwindcss',
+  'vitejs',
+  'html5',
+  'css3',
+  'cypress',
+  'reactjs',
+  'git',
+  'github',
+  'js',
+  'jquery',
+  'nodejs',
+  'postgresql',
+  'rails',
+  'ruby',
+  'tailwindcss',
+  'vitejs',
+  'html5',
+  'css3',
+  'cypress',
+];

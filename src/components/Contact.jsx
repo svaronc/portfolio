@@ -20,7 +20,7 @@ function Contact() {
     setFormData(prev => ({...prev, [name]: value}))
   }
   return (
-    <div id="contact" className={`${styles.container} mt-20`}>
+    <section id="contact" className={`${styles.container} mt-20`}>
       <h2 className={`${styles.heading2} text-center`}>Contact</h2>
       <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto">
         <div className="mb-4">
@@ -74,7 +74,7 @@ function Contact() {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   )
 }
 

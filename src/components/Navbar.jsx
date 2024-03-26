@@ -20,7 +20,7 @@ const Navbar = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <div className="w-full flex py-6 justify-between items-center">
+    <nav className="w-full flex py-6 justify-between items-center">
       <img src={logo} alt="Logo" className="w-[64px] h-[64px]" />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -54,7 +54,7 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

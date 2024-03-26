@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="mt-10 mb-20">
+    <footer className="mt-10 mb-20">
       <hr />
       <div className="text-white flex flex-col items-center justify-center">
         <p>© 2024 Svaronc. All rights reserved.</p>
@@ -15,7 +15,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -2,6 +2,7 @@ import styles from "../style";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import StackIcon from "tech-stack-icons";
 import Spline from "@splinetool/react-spline";
+import { stack } from "../constants";
 
 const Home = () => {
   
@@ -53,7 +54,7 @@ const Home = () => {
         <div
           className={`flex flex-1 md:my-0 my-10 relative ${styles.flexCenter}`}
         >
-           <Spline scene="https://prod.spline.design/W2ZgKDWMcVGhsfap/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/W2ZgKDWMcVGhsfap/scene.splinecode" />
           <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
           <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
           <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
@@ -61,34 +62,9 @@ const Home = () => {
       </section>
       <div className="slider">
         <div className="slide-track ">
-          <StackIcon name="reactjs" className="icon" />
-          <StackIcon name="git" className="icon" />
-          <StackIcon name="github" className="icon" />
-          <StackIcon name="js" className="icon" />
-          <StackIcon name="jquery" className="icon" />
-          <StackIcon name="nodejs" className="icon" />
-          <StackIcon name="postgresql" className="icon" />
-          <StackIcon name="rails" className="icon" />
-          <StackIcon name="ruby" className="icon" />
-          <StackIcon name="tailwindcss" className="icon" />
-          <StackIcon name="vitejs" className="icon" />
-          <StackIcon name="html5" className="icon" />
-          <StackIcon name="css3" className="icon" />
-          <StackIcon name="cypress" className="icon" />
-          <StackIcon name="reactjs" className="icon" />
-          <StackIcon name="git" className="icon" />
-          <StackIcon name="github" className="icon" />
-          <StackIcon name="js" className="icon" />
-          <StackIcon name="jquery" className="icon" />
-          <StackIcon name="nodejs" className="icon" />
-          <StackIcon name="postgresql" className="icon" />
-          <StackIcon name="rails" className="icon" />
-          <StackIcon name="ruby" className="icon" />
-          <StackIcon name="tailwindcss" className="icon" />
-          <StackIcon name="vitejs" className="icon" />
-          <StackIcon name="html5" className="icon" />
-          <StackIcon name="css3" className="icon" />
-          <StackIcon name="cypress" className="icon" />
+          {stack.map((item, index) => (
+            <StackIcon key={index} name={item} className="icon" />
+          ))}
         </div>
       </div>
     </div>
