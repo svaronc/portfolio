@@ -78,26 +78,32 @@ export const cardInfo = [
 export const certifications = [
   {
     id: 1,
+    name: "Basico Programacion",
     url: "https://platzi.com/p/sebastianvaron96/curso/1050-basico-programacion/diploma/detalle/",
     images: {small: basico_small, medium: basico_medium, large: basico_large},
+
   },
   {
     id: 2,
+    name: "Git Github",
     url: "https://platzi.com/p/sebastianvaron96/curso/1557-git-github/diploma/detalle/",
     images: {small: git_small, medium: git_medium, large: git_large},
   },
   {
     id: 3,
+    name: "React",
     url: "https://platzi.com/p/sebastianvaron96/curso/7395-react/diploma/detalle/",
     images: {small: react_small, medium: react_medium, large: react_large},
   },
   {
     id: 4,
+    name: "UCatalunya",
     url: "https://www.ucatalunya.edu.co/certificados/5L9WZ",
     images: {small: uc_small, medium: uc_medium, large: uc_large},
   },
   {
     id: 5,
+    name: "Web Fundamentos",
     url: "https://platzi.com/p/sebastianvaron96/ruta/7039-web-fundamentos/diploma/detalle/",
     images: {small: web_small, medium: web_medium, large: web_large},
   },
