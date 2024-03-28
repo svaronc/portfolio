@@ -1,13 +1,26 @@
-import wiki from "../assets/WIKIMAPS.png";
-import basico from "../assets/diploma-basico-programacion.jpg";
-import git from "../assets/diploma-git-github.jpg";
-import certReact from "../assets/diploma-react.jpg";
-import diplo from "../assets/diplomado_en_desarrollo_web_full_stackfront_end_back_end (1).jpg";
-import webFunda from "../assets/diploma-web-fundamentos.jpg";
-import wikitest1 from "../assets/wikitest1.mp4";
-import photolabsVideo from "../assets/Photolabs.mp4";
-import photolabs from "../assets/photolabs.png";
-import soon from "../assets/soon.jpg";
+import wiki_small from '../assets/WIKIMAPS_(Small).png';
+import wiki_medium from '../assets/WIKIMAPS_(Medium).png';
+import wiki_large from '../assets/WIKIMAPS_(Large).png';
+import photo_small from '../assets/photolabs_(Small).png';
+import photo_medium from '../assets/photolabs_(Medium).png';
+import photo_large from '../assets/photolabs_(Large).png';
+import wiki_video from '../assets/wikitest1.mp4';
+import photo_video from '../assets/Photolabs.mp4';
+import basico_small from '../assets/diploma_basico_programacion_(Small).jpg';
+import basico_medium from '../assets/diploma_basico_programacion_(Medium).jpg';
+import basico_large from '../assets/diploma_basico_programacion_(Large).jpg';
+import git_small from '../assets/diploma_git_github_(Small).jpg';
+import git_medium from '../assets/diploma_git_github_(Medium).jpg';
+import git_large from '../assets/diploma_git_github_(Large).jpg';
+import react_small from '../assets/diploma_react_(Small).jpg';
+import react_medium from '../assets/diploma_react_(Medium).jpg';
+import react_large from '../assets/diploma_react_(Large).jpg';
+import uc_small from '../assets/diplomado_en_desarrollo_web_full_stackfront_end_back_end_(1)_(Small).jpg';
+import uc_medium from '../assets/diplomado_en_desarrollo_web_full_stackfront_end_back_end_(1)_(Medium).jpg';
+import uc_large from '../assets/diplomado_en_desarrollo_web_full_stackfront_end_back_end_(1)_(Large).jpg';
+import web_small from '../assets/diploma_web_fundamentos_(Small).jpg';
+import web_medium from '../assets/diploma_web_fundamentos_(Medium).jpg';
+import web_large from '../assets/diploma_web_fundamentos_(Large).jpg';
 
 export const navLinks = [
   {
@@ -35,9 +48,9 @@ export const cardInfo = [
     description:
       "WikiMaps - A collaborative mapping web app that allow users to create maps with various points of interest, keep a list of favorites and contribute to maps on the Discover page.",
     stack: ["jquery", "postgresql", "js", "css3", "nodejs", "html5"],
-    image: wiki,
+    image: { small: wiki_small, medium: wiki_medium, large: wiki_large},
     repo: "https://github.com/glowiep/WikiMaps",
-    video: wikitest1,
+    video: wiki_video,
     deployed: "https://wikimaps.up.railway.app/",
   },
   {
@@ -46,9 +59,9 @@ export const cardInfo = [
     description:
       "PhotoLabs is an engaging photo browsing application that allows users to explore a diverse collection of images across various categories. With its user-friendly interface, PhotoLabs offers the following key features: Browse by Topic, Like Photos and preview them in full screen.",
     stack: ["reactjs", "postgresql", "js", "css3", "nodejs", "html5"],
-    image: photolabs,
+    image: { small: photo_small, medium: photo_medium, large: photo_large},
     repo: "https://github.com/svaronc/photolabs-starter",
-    video: photolabsVideo,
+    video: photo_video
   },
   {
     id: 3,
@@ -56,7 +69,7 @@ export const cardInfo = [
     description:
       "This is an ongoing project that aims to provide a platfomr for cusstomer support agents to manage their tickets and provide a better service to their customers.",
     stack: ["ruby", "rails", "postgresql", "js", "tailwindcss", "reactjs"],
-    image: soon,
+    image: { small: '../assets/WIKIMAPS_(Small).png', medium: '../assets/WIKIMAPS_(Medium).png', large: '../assets/WIKIMAPS_(Large).png'},
     repo: "https://github.com/glowiep/SmartAgent",
     video: null,
   },
@@ -66,27 +79,27 @@ export const certifications = [
   {
     id: 1,
     url: "https://platzi.com/p/sebastianvaron96/curso/1050-basico-programacion/diploma/detalle/",
-    image: basico,
+    images: {small: basico_small, medium: basico_medium, large: basico_large},
   },
   {
     id: 2,
     url: "https://platzi.com/p/sebastianvaron96/curso/1557-git-github/diploma/detalle/",
-    image: git,
+    images: {small: git_small, medium: git_medium, large: git_large},
   },
   {
     id: 3,
     url: "https://platzi.com/p/sebastianvaron96/curso/7395-react/diploma/detalle/",
-    image: certReact,
+    images: {small: react_small, medium: react_medium, large: react_large},
   },
   {
     id: 4,
     url: "https://www.ucatalunya.edu.co/certificados/5L9WZ",
-    image: diplo,
+    images: {small: uc_small, medium: uc_medium, large: uc_large},
   },
   {
     id: 5,
     url: "https://platzi.com/p/sebastianvaron96/ruta/7039-web-fundamentos/diploma/detalle/",
-    image: webFunda,
+    images: {small: web_small, medium: web_medium, large: web_large},
   },
 ];
 export const stack = [
