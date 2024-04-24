@@ -9,7 +9,7 @@ export const ProjectCard = ({ info }) => {
   return (
     <div key={info.id}>
       <div className="card__gradient card lg:card-side shadow-xl mt-12">
-        <picture className="aspect-square w-[500px] h-[400px] flex justify-center md:items-center self-center md:ml-5 mt-5 md:mt-0">
+        <picture className="aspect-square w-[500px] h-[400px] flex justify-center md:items-center self-center md:ml-5 mt-5 ">
           <source srcSet={info.image.large} media="(min-width: 1024px)" />
           <source srcSet={info.image.medium} media="(min-width: 640px)" />
           <img src={info.image.small} alt={info.title} className="object-cover w-full rounded-lg shadow-md shadow-slate-200" />

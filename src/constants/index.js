@@ -44,6 +44,16 @@ export const navLinks = [
 export const cardInfo = [
   {
     id: 1,
+    title: "Smart Agent",
+    description:
+      "SmartAgent is a customer support ticket management application, paired with an AI assistant, this was the final project for the Lighthouse Labs Full Stack Web Development Bootcamp.",
+    stack: ["ruby", "rails", "postgresql", "js", "tailwindcss", "reactjs"],
+    image: { small: '../assets/WIKIMAPS_(Small).png', medium: '../assets/WIKIMAPS_(Medium).png', large: '../assets/WIKIMAPS_(Large).png'},
+    repo: "https://github.com/glowiep/SmartAgent",
+    video: null,
+  },
+  {
+    id: 2,
     title: "WikiMaps",
     description:
       "WikiMaps - A collaborative mapping web app that allow users to create maps with various points of interest, keep a list of favorites and contribute to maps on the Discover page.",
@@ -54,7 +64,7 @@ export const cardInfo = [
     deployed: "https://wikimaps.up.railway.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Photolabs",
     description:
       "PhotoLabs is an engaging photo browsing application that allows users to explore a diverse collection of images across various categories. With its user-friendly interface, PhotoLabs offers the following key features: Browse by Topic, Like Photos and preview them in full screen.",
@@ -63,16 +73,7 @@ export const cardInfo = [
     repo: "https://github.com/svaronc/photolabs-starter",
     video: photo_video
   },
-  {
-    id: 3,
-    title: "Smart Agent",
-    description:
-      "This is an ongoing project that aims to provide a platfomr for cusstomer support agents to manage their tickets and provide a better service to their customers.",
-    stack: ["ruby", "rails", "postgresql", "js", "tailwindcss", "reactjs"],
-    image: { small: '../assets/WIKIMAPS_(Small).png', medium: '../assets/WIKIMAPS_(Medium).png', large: '../assets/WIKIMAPS_(Large).png'},
-    repo: "https://github.com/glowiep/SmartAgent",
-    video: null,
-  },
+  
 ];
 
 export const certifications = [
