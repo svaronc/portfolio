@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import logo from "../assets/logo.jpg";
 import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";  
-import { navLinks } from "../constants";
+import { navLinks } from "../constants/index";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 

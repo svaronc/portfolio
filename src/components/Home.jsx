@@ -2,7 +2,7 @@ import styles from "../style";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import StackIcon from "tech-stack-icons";
 import Spline from "@splinetool/react-spline";
-import { stack } from "../constants";
+import { stack } from "../constants/index";
 
 const Home = () => {
   

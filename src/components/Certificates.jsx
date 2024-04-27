@@ -1,5 +1,5 @@
 import styles from "../style";
-import { certifications } from "../constants";
+import { certifications } from "../constants/index";
 import Atropos from "atropos/react";
 
 

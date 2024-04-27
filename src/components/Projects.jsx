@@ -1,5 +1,5 @@
 import styles from "../style";
-import { cardInfo } from "../constants";
+import { cardInfo } from "../constants/index";
 import { ProjectCard } from "./ProjectsCard";
 
 
