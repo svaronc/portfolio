@@ -1,30 +1,43 @@
-import { useRef, useState } from "react"
-import styles from "../style"
-import emailjs from '@emailjs/browser';
+import { useRef, useState } from "react";
+import styles from "../style";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
-  const [formData, setFormData] = useState({user_name: "", user_email: "", message: ""})
-  const form = useRef()
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_107naeb', 'template_vde62pd', form.current, {publicKey: "cnZohqW2n2ve31Cgt"})
-      .then((result) => {
+    emailjs
+      .sendForm("service_107naeb", "template_vde62pd", form.current, {
+        publicKey: "cnZohqW2n2ve31Cgt",
+      })
+      .then(
+        (result) => {
           console.log(result.text);
-          setFormData({user_name: "", user_email: "", message: ""})
-      }, (error) => {
+          setFormData({ user_name: "", user_email: "", message: "" });
+        },
+        (error) => {
           console.log(error.text);
-      });
-  }
+        }
+      );
+  };
   const handleChange = (e) => {
-    const {name, value} = e.target
-    setFormData(prev => ({...prev, [name]: value}))
-  }
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
   return (
     <section id="contact" className={`${styles.container} mt-20`}>
       <h2 className={`${styles.heading2} text-center`}>Contact</h2>
       <form ref={form} onSubmit={sendEmail} className="max-w-md mx-auto">
         <div className="mb-4">
-          <label className="block text-white text-sm font-bold mb-2" htmlFor="name">
+          <label
+            className="block text-white text-sm font-bold mb-2"
+            htmlFor="name"
+          >
             Name
           </label>
           <input
@@ -38,7 +51,10 @@ function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-white text-sm font-bold mb-2" htmlFor="email">
+          <label
+            className="block text-white text-sm font-bold mb-2"
+            htmlFor="email"
+          >
             Email
           </label>
           <input
@@ -52,7 +68,10 @@ function Contact() {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-white text-sm font-bold mb-2" htmlFor="message">
+          <label
+            className="block text-white text-sm font-bold mb-2"
+            htmlFor="message"
+          >
             Message
           </label>
           <textarea
@@ -72,10 +91,17 @@ function Contact() {
           >
             Submit
           </button>
+          <a
+            href="https://flowcv.com/resume/wdlwcurd80"
+            target="_blank"
+            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-4"
+          >
+          CV
+          </a>
         </div>
       </form>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

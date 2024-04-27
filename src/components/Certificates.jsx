@@ -6,7 +6,7 @@ import Atropos from "atropos/react";
 function Certificates() {
   return (
       <section id="certifications" className="mt-20">
-        <h2 className={`${styles.heading2} text-center`}>Certificates</h2>
+        <h2 className={`${styles.heading2} text-center`}>Certifications</h2>
         <div className="flex gap-3 flex-col sm:flex-row items-center">
           {certifications.map((certification) => (
             <Atropos key={certification.id} className="my-atropos">
